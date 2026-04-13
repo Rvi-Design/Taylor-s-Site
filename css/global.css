@@ -1,0 +1,177 @@
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200..800&family=Forum&family=Ovo&family=Questrial&display=swap');
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+--darkGreen: #313733;
+--midGreen: #64755E;
+--teracotta: #C7835C;
+--yellow: #E7D6A9;
+--offWhite: #FFFAF6;
+
+--headerFont: "Questrial";
+--bodyFont: "Dosis";
+--accentFont: "Forum";
+--buttonFont: "Ovo";
+
+}
+
+.button {
+    background-color: var(--teracotta);
+    font-family: var(--buttonFont);
+    color: var(--offWhite);
+    border-radius: 15px;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+    border: none;
+    transition: background-color 0.25s ease-in-out;
+    text-decoration: none;
+    align-self: center;
+}
+
+.CTA .button {
+    font-size: 3vw;
+    padding: 1rem 2rem;
+}
+
+.button:hover {
+    background-color: #753d1c;
+}
+
+body {
+    background-image: URL(../assets/BackgroundIMG.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+h2 {
+    font-family: var(--headerFont);
+    color: var(--teracotta);
+    font-weight: 300;
+    font-size: 3rem;
+}
+
+h3 {
+    font-family: var(--accentFont);
+    color: var(--offWhite);
+    font-size: 3rem;
+    font-weight: 300;
+}
+
+h4 {
+    font-family: var(--headerFont);
+    color: var(--offWhite);
+    font-weight: 300;
+    font-size: 2rem;
+}
+
+p {
+    font-family: var(--bodyFont);
+}
+
+/*-----------------------Nav-------------------------*/
+nav {
+    display: flex;
+    background-color: var(--darkGreen);
+    justify-content: space-between;
+    padding-right: 1rem;
+}
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+}
+nav ul li a {
+    text-decoration: none;
+    color: var(--offWhite);
+    font-family: var(--headerFont);
+    font-size: 2rem;
+    font-weight: 300;
+    transition: all 0.25s ease-in-out;
+}
+nav ul li a:hover{
+    text-decoration: underline;
+    color: #afc5a7;
+}
+
+/*-----------------------CTA Banner------------------*/
+.CTA {
+    background-image: url(../assets/CTABG.png);
+    min-height: 150px;
+    display: flex;
+    justify-content: space-around;
+    align-content: center;
+    flex-wrap: wrap;
+    color: var(--offWhite);
+    font-family: var(--headerFont);
+    font-size: 4vw;
+    padding: 0 5%;
+}
+
+/* -------------------Footer----------------- */
+footer {
+    margin-top: 5%;
+    display: grid;
+    grid-template-columns: min-content min-content 3fr;
+    grid-template-rows: min-content;
+    background-color: var(--darkGreen);
+    padding: 0 2rem;
+    gap: 2rem;
+}
+footer ul li {
+    list-style: none;
+}
+.vertLinks {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 1rem 0;
+}
+.vertLinks ul {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+.vertLinks ul li a {
+    color: var(--offWhite);
+    font-family: var(--headerFont);
+    font-size: 2vw;
+    font-weight: 300;
+    transition: color 0.25s ease-in-out;
+}
+
+.vertLinks ul li a:hover{
+    color: #afc5a7;
+}
+.iconHolder {
+    padding: 0 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.iconHolder a svg{
+    fill: #F0E4DA;
+    transition: fill 0.25s ease-in-out;
+}
+
+.iconHolder a svg:hover{
+    fill: #C7835C;
+}
+.footLogos {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+h1 {
+    font-family: var(--accentFont);
+    color: var(--offWhite);
+    font-weight: 300;
+    font-size: 120px;
+    text-align: end;
+    line-height: 97%;
+}
