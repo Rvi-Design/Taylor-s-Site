@@ -17,6 +17,9 @@
    background-color: var(--midGreen);
 }
 .carouselCard {
+    display: none;
+}
+.carouselCard.active {
     display: grid;
     grid-template-columns: 1fr 3fr;
 }
@@ -39,6 +42,10 @@
     top: 0; left: 0; width: 100%; height: 100%;
     pointer-events: none;
 }
+.carouselTrack {
+    border-radius: 20px;
+    overflow: hidden;
+}
 #heroCard {
     background-color: var(--teracotta);
     padding: 1rem;
@@ -53,22 +60,25 @@
     font-weight: 300;
     font-size: 2.5rem;
 }
+#counterHero {
+    font-family: var(--bodyFont);
+    color: var(--teracotta);
+    font-weight: 700;
+    text-decoration: underline;
+}
 /*----------------------About Me-------------------------*/
 #aboutMe {
     display: grid;
     grid-template-columns: 2fr 1fr 1fr;
-    background-image: URL(../assets/aboutBG.png);
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    padding: 1rem;
+    background-color: var(--offWhite);
+    padding: 1rem 0;
 }
 
 .textBox {
     display: flex;
     flex-direction: column;
     gap: 1rem;
-    padding: 5% 2%;
+    padding: 5%;
 }
 
 .textBox p, ul {
@@ -112,6 +122,9 @@
     flex-direction: column;
     align-items: center;
     justify-content: space-evenly;
+    background-color: var(--midGreen);
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
 }
 
 .iconHolder ul {
@@ -119,4 +132,67 @@
     display: flex;
     flex-direction: column;
     gap: 2rem;
+}
+
+/* --------------Projects------------- */
+#projects {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+    margin-bottom: 5%;
+}
+.projectGrid {
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+}
+.reverse {
+    flex-direction: row-reverse;
+}
+.projectCard {
+    background-color: var(--darkGreen);
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: var(--offWhite);
+    padding: 4rem;
+}
+
+.projectCard h3{
+    font-family: var(--accentFont);
+    font-size:4rem;
+    font-weight:400;
+    margin:0;
+    line-height:1;
+}
+
+.projectcard h4{
+    font-size:2rem;
+    font-weight:300;
+    margin:1rem 0 2rem 0;
+}
+
+.projectCard p{
+    font-size:1.2rem;
+    line-height:1.6;
+    max-width:500px;
+    margin:0 0 3rem 0;
+}
+
+.projectCard .button{
+    margin-top:1rem;
+    padding:1rem 2rem;
+    font-size:1.2rem;
+}
+.projectGridIMG {
+    width: 50%;
+}
+
+.projectGridIMG img {
+    width: 100%;
+    height: 100%;
 }
